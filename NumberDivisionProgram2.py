@@ -23,7 +23,9 @@ def clear():
     e3.delete(0,END)
     e1.focus()
 def finish():
-    root.destroy()
+    answer=messagebox.askyesno("Quitting","Are u sure ?")
+    if answer==True:
+        root.destroy()
 root=Tk()
 root.geometry("400x200+100+200")
 l1=Label(root,text="Number Division Program",font="Arial 18 bold")
